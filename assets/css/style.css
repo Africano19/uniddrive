@@ -3,7 +3,7 @@
 [Master Stylesheet]
 
 Project        :   sash – Bootstrap 5  Admin & Dashboard Template
-Copyright      :   Spruko Technologies Private Limited 
+Copyright      :   Spruko Technologies Private Limited
 Author         :   Spruko
 Author URL     :   https://themeforest.net/user/spruko
 Support	       :   support@spruko.com
@@ -1586,7 +1586,7 @@ blockquote cite:before {
 }
 
 .breadcrumb-item1.active {
-    color: #fff;
+    color: #000;
 }
 
 .breadcrumb-3 ol {
@@ -7686,6 +7686,8 @@ ul.labels-info li a i {
     border-color: #e9edf4;
 }
 
+
+
 .modal-header h4.modal-title {
     font-weight: 300;
 }
@@ -7695,6 +7697,9 @@ ul.labels-info li a i {
 }
 
 /*------ Modal -------*/
+
+/*
+
 .modal-open {
     overflow: scroll;
     padding: 0 !important;
@@ -8124,7 +8129,7 @@ ul.labels-info li a i {
 .modal-open .ui-datepicker {
     z-index: 9999 !important;
     top: 170px !important;
-}
+} */
 
 .nav-sidebar .list-unstyled li:last-child {
     border-bottom: 0px;
@@ -8658,6 +8663,7 @@ body.fixed-header .page {
 }
 
 .page-title {
+  color: #000 !important;
     margin: 0;
     font-size: 20px;
     font-weight: 500;
@@ -18805,7 +18811,7 @@ img {
     }
 
     .landing-page .app-sidebar.horizontal-main {
-        background-color: #fff !important;
+        background-color: #000 !important;
     }
 }
 
@@ -19965,7 +19971,7 @@ img {
 
     .landing-page .app-sidebar.horizontal-main.fixed-header {
         border-bottom: 1px solid #ebedfa;
-        background-color: #fff !important;
+        background-color: #000 !important;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     }
 
@@ -20139,7 +20145,7 @@ img {
 @media (min-width: 992px) {
     .dark-mode.landing-page .app-sidebar.horizontal-main.fixed-header {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        background-color: #1a1a3c !important;
+        background-color: #000 !important;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     }
 }
@@ -20228,7 +20234,7 @@ img {
 
 @media (max-width: 992px) {
     .dark-mode.landing-page .app-sidebar.horizontal-main {
-        background-color: #2a2a4a !important;
+        background-color: #000 !important;
     }
 }
 

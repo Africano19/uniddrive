@@ -46,16 +46,16 @@
 
 <body class="app sidebar-mini ltr login-img" style="background-image: url(../assets/imagens/iade_uni.jpg);">
 
-<div id="emptyAlert" class="alert alert-warning alert-dismissible fade cwAlert">
+  <div id="emptyAlert" class="alert alert-warning alert-dismissible fade cwAlert" style="opacity: 1;">
     <strong>Erro:</strong> É necessário preencher todos os campos.
   </div>
-  <div id="errorAlert" class="alert alert-danger alert-dismissible fade cwAlert">
+  <div id="errorAlert" class="alert alert-danger alert-dismissible fade cwAlert" style="opacity: 1;">
     <strong>Erro:</strong> Não foi possível iniciar sessão.
   </div>
-  <div id="loggedInAlert" class="alert alert-success alert-dismissible fade cwAlert">
+  <div id="loggedInAlert" class="alert alert-success alert-dismissible fade cwAlert" style="opacity: 1;">
     <strong>Sucesso:</strong> Sessão iniciada com sucesso!
   </div>
-  <div id="unknownAlert" class="alert alert-danger alert-dismissible fade cwAlert">
+  <div id="unknownAlert" class="alert alert-danger alert-dismissible fade cwAlert" style="opacity: 1;">
     <strong>Erro:</strong> O servidor obteve um erro, por favor, contacte o administrador com o erro: AL01.
   </div>
 
@@ -90,24 +90,24 @@
                                                 <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                                     <i class="zmdi zmdi-email text-muted" aria-hidden="true"></i>
                                                 </a>
-                                                <input class="input100 border-start-0 form-control ms-0" type="text" placeholder="Number">
+                                                <input id="numeroi" class="input100 border-start-0 form-control ms-0" type="text" placeholder="Number">
                                             </div>
                                             <div class="wrap-input100 validate-input input-group" id="Password-toggle">
                                                 <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                                     <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
                                                 </a>
-                                                <input class="input100 border-start-0 form-control ms-0" type="password" placeholder="Password">
+                                                <input id="passwordi" class="input100 border-start-0 form-control ms-0" type="password" placeholder="Password">
                                             </div>
 
                                             <div class="container-login100-form-btn">
                                                 <!--<a href="https://testes.uniddrive.pt/dashboard/" class="login100-form-btn btn-primary" style="background-color: #000 !important;">
                                                         Login
                                                 </a>-->
-                                                <button class="login100-form-btn btn-primary" style="background-color: #000 !important;" onclick="login()">Login</button>
+                                                <button class="login100-form-btn btn-primary" style="background-color: #000 !important; border-color: #000 !important;" onclick="login()" type="button">Login</button>
                                             </div>
-                        
+
                                         </div>
-                        
+
                                     </div>
                                 </div>
                             </div>

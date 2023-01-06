@@ -31,7 +31,7 @@ function login(){
             {
                 showAlert("#errorAlert");
             }
-            else if(result.state=="success")
+            else if(result.state=="redirect" || result.state=="success")
             {
                 showAlert("#loggedInAlert");
                 setTimeout(function(){ window.location.href = "https://testes.uniddrive.pt/dashboard" }, 1500);

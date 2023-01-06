@@ -9,7 +9,7 @@ class AuthModel extends CI_Model {
 
 public function login($number, $password){
     
-    $user = $this->db->select('user_id, user_num, user_password, user_name, user_role')->where('user_num', $number)->join('role', 'role_id = user_role')->get('user');
+    $user = $this->db->select('user_id, user_num, user_password, user_name, role_name')->where('user_num', $number)->join('Role', 'role_id = user_role')->get('User');
 
     if($user->num_rows() == 0)
     {

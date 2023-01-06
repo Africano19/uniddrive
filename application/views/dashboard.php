@@ -126,13 +126,16 @@
                                 <a class="side-menu__item has-link" data-bs-toggle="slide" href="index.html"><i
                                         class="side-menu__icon bi bi-file-earmark-excel"></i><span
                                         class="side-menu__label">Ficheiros Indisponíveis</span></a>
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="fileupload"><i
+                                        class="side-menu__icon bi bi-box-arrow-in-down"></i><span
+                                        class="side-menu__label">Carregar Documentos</span></a>
                             </li>
                             <hr style="width:50%;text-align:left;margin-left:25%">
                             <li class="sub-category">
                                 <h3>Administrador</h3>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="userlist"><i
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="usermanagement"><i
                                         class="side-menu__icon bi bi-people"></i><span
                                         class="side-menu__label">Gerir Utilizadores</span></a>
                             </li>
@@ -154,8 +157,142 @@
                     <!-- CONTAINER -->
                     <div class="main-container container-fluid">
 
+                      <!-- PAGE-HEADER -->
+                      <div class="page-header">
+                          <h1 class="page-title" style="color: #000">Dashboard</h1>
+                          <div>
+                              <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="dashboard">HOME</a></li>
+                                  <li class="breadcrumb-item active" style="color: #000; " aria-current="page">Dashboard</li>
+                              </ol>
+                          </div>
+                      </div>
+                      <!-- PAGE-HEADER END -->
+
+
+                        <!-- Body Stuff -->
+
+                        <div class="row" id="Services_Dash">
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
+                                <div class="card widgets-cards box-primary-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.06" data-thickness="6" data-bs-color="#000 ">
+                                            <div class="chart-circle-value" style="color:#000;">6%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3" style="color:#000;">
+                                            <p class="mt-0" style="color:#000;">18</p>
+                                            <p class="mt-1 mb-0" style="color:#000;">Docentes Registados</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COL END -->
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
+                                <div class="card widgets-cards box-success-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.08" data-thickness="6" data-bs-color="#000 ">
+                                            <div class="chart-circle-value" style="color:#000;">8%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3" style="color:#000;">
+                                            <p class="mt-0" style="color:#000;">24</p>
+                                            <p class=" mt-1 mb-0" style="color:#000;">Projetos Guardados</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COL END -->
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
+                                <div class="card widgets-cards box-warning-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.02" data-thickness="6" data-bs-color="#000 ">
+                                            <div class="chart-circle-value " style="color:#000;">2%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3" style="color:#000;">
+                                            <p class="mt-0" style="color:#000;">8</p>
+                                            <p class=" mt-1 mb-0" style="color:#000;">Utilizadores Gerais</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
+                                <div class="card widgets-cards box-danger-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.83" data-thickness="6" data-bs-color="#000 ">
+                                            <div class="chart-circle-value" style="color:#000;">83%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3" style="color:#000;">
+                                            <p class="mt-0" style="color:#000;">247</p>
+                                            <p class=" mt-1 mb-0" style="color:#000;">Numero de Visitas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Row -->
+                        <div class="row" id ="Services_table_Dash" style="color:#000;" >
+                          <div class="col-lg-8 col-xl-6">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h3 class="card-title">Default Carousel</h3>
+                                  </div>
+                                  <div class="card-body h-100">
+                                      <div id="carousel-default" class="carousel slide" data-bs-ride="carousel">
+                                          <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                  <img class="d-block w-100 br-5" alt="" src="../assets/images/media/1.jpg" data-bs-holder-rendered="true">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block w-100 br-5" alt="" src="../assets/images/media/2.jpg" data-bs-holder-rendered="true">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block w-100 br-5" alt="" src="../assets/images/media/3.jpg" data-bs-holder-rendered="true">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block w-100 br-5" alt="" src="../assets/images/media/4.jpg" data-bs-holder-rendered="true">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block w-100 br-5" alt="" src="../assets/images/media/5.jpg" data-bs-holder-rendered="true">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-8 col-xl-6">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h3 class="card-title">Default Carousel</h3>
+                                  </div>
+                                  <div class="card-body h-100">
+                                      <div id="carousel-default" class="carousel slide" data-bs-ride="carousel">
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100 br-5" alt="" src="../assets/images/media/6.jpg" data-bs-holder-rendered="true">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 br-5" alt="" src="../assets/images/media/7.jpg" data-bs-holder-rendered="true">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 br-5" alt="" src="../assets/images/media/5.jpg" data-bs-holder-rendered="true">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 br-5" alt="" src="../assets/images/media/8.jpg" data-bs-holder-rendered="true">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 br-5" alt="" src="../assets/images/media/9.jpg" data-bs-holder-rendered="true">
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- End Row -->
+
+                        <!-- !Body Stuff -->
                     </div>
-                    <!-- CONTAINER END -->
                 </div>
             </div>
             <!--app-content close-->
@@ -175,10 +312,41 @@
         </footer>
         <!-- FOOTER END -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="color: black" class="modal-title" id="exampleModalLabel">Carregar ficheiro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form action="/action_page.php">
+                  <label style="color: black" for="fname">Nome do conteudo:</label>
+                  <input type="text" id="fname" name="fname"><br><br>
+                  <label style="color: black" for="categories">Escolha uma categoria:</label>
+                  <select name="categories" id="categories">
+                    <option value="1">Teste 1</option>
+                    <option value="2">Teste 2</option>
+                  </select>
+                  <br><br>
+                  <label style="color: black" for="myfile">Escolha o ficheiro:</label>
+                  <input type="file" id="myfile" name="myfile"><br><br>
+                  <input type="submit" value="Enviar">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button style="color: white; background-color: black !important;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
 
     <!-- BACK-TO-TOP -->
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up" style="color: #000;"></i></a>
+
 
     <!-- JQUERY JS -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -207,6 +375,10 @@
     <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
     <script src="../assets/plugins/p-scroll/pscroll.js"></script>
     <script src="../assets/plugins/p-scroll/pscroll-1.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- INTERNAL CHARTJS CHART JS-->
     <script src="../assets/plugins/chart/Chart.bundle.js"></script>
@@ -250,6 +422,7 @@
 
     <!-- CUSTOM JS -->
     <script src="../assets/js/custom.js"></script>
+
 
 
 </body>

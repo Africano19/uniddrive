@@ -38,6 +38,7 @@ public function __construct() {
 			return;
 		}
 
+        $this->AuthModel->login($number, $password);
     }
 
 }
